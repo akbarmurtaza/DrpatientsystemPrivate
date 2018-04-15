@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller {
+class Adddoc extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -22,7 +22,7 @@ class Dashboard extends CI_Controller {
 	{
 			if(isset($this->session->userdata['logged_in'])){
 
-			$this->load->view('Admin/dashboard.php');
+			$this->load->view('Admin/actions/Add_doctor.php');
 		}
 
 			else{

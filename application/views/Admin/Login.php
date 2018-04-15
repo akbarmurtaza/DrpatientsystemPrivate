@@ -12,7 +12,8 @@ if(isset($_POST['input']))
 
 
       $conn = new mysqli($servername, $username, $password, $dbname);
-      $result = mysqli_query($conn,"SELECT id FROM admin where username= '$_Username' AND password = '$_password'");
+
+      $result = mysqli_query($conn,"SELECT * from admin where username = '$_Username' AND password = '$_password'");
       $count = mysqli_num_rows($result);
 
 if ($count > 0)
@@ -30,11 +31,7 @@ header("location: Admin_Dashboard");
 }
 else
 {
-    echo $count;
-  echo $_Username;
-  echo $_password;
-  echo $count;
-        echo "Query failed!";
+        echo ' Invalid Login Details Provided';
 }
 }
 

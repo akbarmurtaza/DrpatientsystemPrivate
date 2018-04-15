@@ -24,168 +24,70 @@ $conn = new mysqli($servername, $username, $password, $dbname);
    <!-- Latest compiled JavaScript -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <style>
+ .navbar-inverse { background-color: #222222}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #FF1C14}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #080808}
+.dropdown-menu { background-color: #FF3019}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428BCA}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #080808}
+.navbar-inverse .navbar-brand { color: #999999}
+.navbar-inverse .navbar-brand:hover { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a { color: #999999}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #333333}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
 
- .navbar {
-   background-color: #9b59b6;
- }
- .navbar .navbar-brand {
-   color: #ecf0f1;
- }
- .navbar .navbar-brand:hover,
- .navbar .navbar-brand:focus {
-   color: #ecdbff;
- }
- .navbar .navbar-text {
-   color: #ecf0f1;
- }
- .navbar .navbar-text a {
-   color: #ecdbff;
- }
- .navbar .navbar-text a:hover,
- .navbar .navbar-text a:focus {
-   color: #ecdbff;
- }
- .navbar .navbar-nav .nav-link {
-   color: #ecf0f1;
-   border-radius: .25rem;
-   margin: 0 0.25em;
- }
- .navbar .navbar-nav .nav-link:not(.disabled):hover,
- .navbar .navbar-nav .nav-link:not(.disabled):focus {
-   color: #ecdbff;
- }
- .navbar .navbar-nav .dropdown-menu {
-   background-color: #9b59b6;
-   border-color: #8e44ad;
- }
- .navbar .navbar-nav .dropdown-menu .dropdown-item {
-   color: #ecf0f1;
- }
- .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
- .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
- .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
-   color: #ecdbff;
-   background-color: #8e44ad;
- }
- .navbar .navbar-nav .dropdown-menu .dropdown-divider {
-   border-top-color: #8e44ad;
- }
- .navbar .navbar-nav .nav-item.active .nav-link,
- .navbar .navbar-nav .nav-item.active .nav-link:hover,
- .navbar .navbar-nav .nav-item.active .nav-link:focus,
- .navbar .navbar-nav .nav-item.show .nav-link,
- .navbar .navbar-nav .nav-item.show .nav-link:hover,
- .navbar .navbar-nav .nav-item.show .nav-link:focus {
-   color: #ecdbff;
-   background-color: #8e44ad;
- }
- .navbar .navbar-toggle {
-   border-color: #8e44ad;
- }
- .navbar .navbar-toggle:hover,
- .navbar .navbar-toggle:focus {
-   background-color: #8e44ad;
- }
- .navbar .navbar-toggle .navbar-toggler-icon {
-   color: #ecf0f1;
- }
- .navbar .navbar-collapse,
- .navbar .navbar-form {
-   border-color: #ecf0f1;
- }
- .navbar .navbar-link {
-   color: #ecf0f1;
- }
- .navbar .navbar-link:hover {
-   color: #ecdbff;
- }
 
- @media (max-width: 575px) {
-   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
-     color: #ecf0f1;
-   }
-   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-     color: #ecdbff;
-   }
-   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
-     color: #ecdbff;
-     background-color: #8e44ad;
-   }
- }
-
- @media (max-width: 767px) {
-   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
-     color: #ecf0f1;
-   }
-   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-     color: #ecdbff;
-   }
-   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
-     color: #ecdbff;
-     background-color: #8e44ad;
-   }
- }
-
- @media (max-width: 991px) {
-   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
-     color: #ecf0f1;
-   }
-   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-     color: #ecdbff;
-   }
-   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
-     color: #ecdbff;
-     background-color: #8e44ad;
-   }
- }
-
- @media (max-width: 1199px) {
-   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
-     color: #ecf0f1;
-   }
-   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-     color: #ecdbff;
-   }
-   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
-     color: #ecdbff;
-     background-color: #8e44ad;
-   }
- }
-
- .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
-   color: #ecf0f1;
- }
- .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
- .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-   color: #ecdbff;
- }
- .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
-   color: #ecdbff;
-   background-color: #8e44ad;
- }
 
  </style>
  </head>
- <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
-     <div class="container-fluid">
-         <div class="navbar-header"><a class="navbar-brand" href="<?php echo base_url();?>index.php/Admin/Dashboard"><span class="glyphicon glyphicon-home" style="font-size:30px;color:#2ECC71;"></span></a>
-             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-             </button>
-         </div>
-         <div class="collapse navbar-collapse navbar-menubuilder">
-             <ul class="nav navbar-nav navbar-right">
-                 <li><a href="<?php echo base_url();?>index.php/Admin/Intern" class="btn btn-geckoboard">Doctors</a>
-                 </li>
-                 <li><a href="<?php echo base_url();?>index.php/Admin/Member" class="btn btn-geckoboard">Patients</a>
-                 </li>
-                 <li><a href="<?php echo base_url();?>index.php/Attendance/Internattendance" class="btn btn-geckoboard">Login Placeholder</a>
-                 </li>
-             </ul>
-         </div>
-     </div>
- </div>
+ <header class="navbar navbar-inverse navbar-static-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="<?php echo base_url();?>index.php/Admin_Dashboard" class="navbar-brand"><span class="glyphicon glyphicon-tint"></span>  Dr Patient System Admin Panel</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="<?php echo base_url();?>index.php/Manageaccounts">Manage Accounts</a>
+        </li>
+				<li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
+	        <ul class="dropdown-menu">
+	          <li><a href="<?php echo base_url();?>index.php/Manageaccounts">Manage Accounts</a></li>
+	          <li><a href="<?php echo base_url();?>index.php/Manageaccounts">Manage Patients</a></li>
+	          <li><a href="#">Indexes</a></li>
+	          <li><a href="#">Reports</a></li>
+	        </ul>
+	      </li>
+        <li>
+          <a href="#">Notifications</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="<?php echo base_url();?>index.php/Admin/Logout">Logout</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </li>
+    </ul>
+    </nav>
+  </div>
+</header>
  </html>
