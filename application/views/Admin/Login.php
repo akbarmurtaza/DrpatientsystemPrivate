@@ -6,8 +6,8 @@ if(isset($_POST['input']))
 
     error_reporting(0);
       $servername = "localhost";
-      $username = "root";
-      $password = "";
+      $username = "snk42";
+      $password = "Healing4all!";
       $dbname = "drpatient";
 
 
@@ -56,7 +56,7 @@ color:red;
 }
 
 h2{
-background-color: #FEFFED;
+background-color: #f8f2ff;
 text-align:center;
 border-radius: 10px 10px 0 0;
 margin: -10px -40px;
@@ -79,6 +79,7 @@ width:99.5%;
 padding: 10px;
 margin-top: 8px;
 border: 1px solid #ccc;
+background-color:#c4aae2;
 padding-left: 5px;
 font-size: 16px;
 font-family:raleway;
@@ -86,9 +87,9 @@ font-family:raleway;
 
 input[type=submit]{
 width: 100%;
-background-color:#FFBC00;
+background-color:#9800ff;
 color: white;
-border: 2px solid #FFCB00;
+border: 2px solid #9800ff;
 padding: 10px;
 font-size:20px;
 cursor:pointer;

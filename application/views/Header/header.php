@@ -15,7 +15,10 @@ $conn = new mysqli($servername, $username, $password, $dbname);
  ?>
 
  <html>
+
+
  <head>
+ <link rel="icon" href="<?php echo base_url(); ?>application/views/favicon.png" type="image/gif">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
    <!-- jQuery library -->
@@ -70,12 +73,11 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 	        <ul class="dropdown-menu">
 	          <li><a href="<?php echo base_url();?>index.php/Manageaccounts">Manage Accounts</a></li>
 	          <li><a href="<?php echo base_url();?>index.php/Manageaccounts">Manage Patients</a></li>
-	          <li><a href="#">Indexes</a></li>
-	          <li><a href="#">Reports</a></li>
+	          <li><a href="<?php echo base_url();?>index.php/Reportpanel">Reports</a></li>
 	        </ul>
 	      </li>
         <li>
-          <a href="#">Notifications</a>
+          <a href="<?php echo base_url();?>index.php/Notifications">Notifications</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -83,7 +85,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="<?php echo base_url();?>index.php/Admin/Logout">Logout</a></li>
-          <li><a href="#">Settings</a></li>
+          <li><a href="<?php echo base_url();?>index.php/Adminsettings">Settings</a></li>
         </ul>
       </li>
     </ul>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,8 +54,8 @@ body {
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">  &times;</a>
   <a href="<?php echo base_url();?>index.php/Manageaccounts"><span class="glyphicon glyphicon-edit">  </span> Manage Accounts</a>
   <a href="<?php echo base_url();?>index.php/Manageaccounts"><span class="glyphicon glyphicon-signal">  </span>  Manage Patients</a>
-  <a href="#"><span class="glyphicon glyphicon-equalizer">  </span>  Reports</a>
-  <a href="#"><span class="glyphicon glyphicon-cog">  </span>  Settings</a>
+  <a href="<?php echo base_url();?>index.php/Reportpanel"><span class="glyphicon glyphicon-equalizer">  </span>  Reports</a>
+  <a href="<?php echo base_url();?>index.php/Adminsettings"><span class="glyphicon glyphicon-cog">  </span>  Settings</a>
 	<a href="javascript:void(0)" onclick="closeNav()"> <span class="glyphicon glyphicon-remove"></span> </a>
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>

@@ -20,6 +20,8 @@ class Account_Panel extends CI_Controller {
 	 */
 	public function index()
 	{
+$this->load->helper('url');
+
 			if(isset($this->session->userdata['logged_in'])){
 
 			$this->load->view('Admin/actions/Account_Panel.php');

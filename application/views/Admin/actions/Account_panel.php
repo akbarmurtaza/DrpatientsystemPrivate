@@ -19,6 +19,10 @@ a {
   <br>
   <button type="button" class="btn btn-danger"><a href="<?php echo base_url();?>index.php/Addpatient">Add Patient</a></button>
   <button type="button" class="btn btn-danger"><a href="<?php echo base_url();?>index.php/Crudpatient">View Patient</a></button>
+  <br>
+  <br>
+  <button type="button" class="btn btn-success"><a href="<?php echo base_url();?>index.php/Patientwaiting">Patient Waiting List Add Data</a></button>
+  <button type="button" class="btn btn-success"><a href="<?php echo base_url();?>index.php/Patientwaitingindex">Patient Waiting List Index</a></button>
 </div>
 </body>
 </html>

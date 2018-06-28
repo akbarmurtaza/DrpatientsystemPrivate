@@ -7,10 +7,10 @@ $this->load->helper('url');
 
 <?php
 error_reporting(0);
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-  $dbname = "drpatient";
+$servername = "localhost";
+$username = "snk42";
+$password = "Healing4all!";
+$dbname = "drpatient";
 
     $var = $this->session->tempdata('id');
 

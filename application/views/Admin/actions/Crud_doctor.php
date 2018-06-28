@@ -5,8 +5,8 @@ $this->load->helper('url');
 
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "snk42";
+$password = "Healing4all!";
 $dbname = "drpatient";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
